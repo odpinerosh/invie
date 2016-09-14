@@ -88,3 +88,21 @@ body {
   width: 800px;
   margin: auto;
 }
+
+.footer {
+  background: #273B47;
+  margin-top: 100px;
+}
+
+.contacto img {
+  display: block;
+}
+
+.contacto strong{
+  display: block;
+}
+
+.contacto a {
+  color: white;
+  text-decoration: none;
+}
