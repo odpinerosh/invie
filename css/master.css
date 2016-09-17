@@ -3,9 +3,25 @@ body {
   margin: 0;
 }
 
+.portada {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    height: 500px;
+}
+
+.logo {
+  margin-left: 0;
+  display: inline-block;
+}
+
 .menu {
   font-size: 24px;
   display: inline-block;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .menu li {
@@ -13,18 +29,27 @@ body {
   margin-left: 30px;
 }
 
-.portada {
-  background-image: url('../images/background.png');
+.menu li:before {
+  content: '· ';
   color: #ffffff;
-  padding: 10px;
-
+  font-size: 25px;
 }
+
+.portada {
+  color: #ffffff;
+  padding: 50px;
+}
+
 
 .titulo {
   font-size: 70px;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 15px;
   margin-top: 70px;
+}
+
+.titulo span {
+  text-decoration: underline;
 }
 
 .titulo-a {
@@ -87,22 +112,139 @@ body {
 .contenedor {
   width: 800px;
   margin: auto;
+  overflow: hidden;
+}
+
+.button {
+  border-radius: 8px;
+  border: none;
+  background: #fd324e;
+  background: linear-gradient(to left, #fe344e, #ff7250);
+  color: white;
+  padding: 7px 12px;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .footer {
   background: #273B47;
-  margin-top: 100px;
+  margin-top: 10px;
+  padding: 50px;
 }
 
+.contacto {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .contacto img {
   display: block;
 }
 
-.contacto strong{
+.contacto span {
   display: block;
+  font-size: 15px;
 }
 
 .contacto a {
   color: white;
   text-decoration: none;
+  margin: 30px 10px 10px 0;
+}
+
+.footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+input, textarea {
+  outline: 0;
+}
+
+input:focus, textarea:focus {
+  background: lightgray;
+}
+
+.formulario {
+  width: 420px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col1, .col2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.col1 {
+  margin-right: 15px;
+}
+
+.col2 {
+  align-items: flex-start;
+}
+
+.col2 .button {
+    margin-top: 10px;
+}
+
+.email {
+  margin-top: 15px;
+}
+
+.genero {
+  margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.interes {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-size: 12px;
+}
+
+.interes input {
+  margin-bottom: 15px;
+}
+
+.tituloContacto {
+  margin-left: 381px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  width: 420px;
+  color: #ffffff;
+  border-bottom: solid 1px #ffffff;
+  /*display: flex;
+  justify-content: flex-end;*/
+}
+
+
+table {
+  width: 100%;
+  margin: 25px 0 25px 0;
+}
+
+th {
+  background: #273b47;
+  color: #ffffff;
+  padding: 10px;
+  text-align: left;
+}
+
+
+td {
+  padding: 20px;
+}
+
+table, td, th {
+  border: solid #273b47 1px;
+  border-collapse: collapse;
 }
